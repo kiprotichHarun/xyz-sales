@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store XYZ</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="products">
+        <table id="items">
+            <tr><th>Product</th><th>Price</th></tr>
+            <tr onclick="addToOrder(1)"><td>Cheeze</td><td>1</td><td>ADD</td></tr>
+            <tr onclick="addToOrder(2)"><td>Hamburger</td><td>3</td><td>ADD</td></tr>
+            <tr onclick="addToOrder(3)"><td>Cola</td><td>5</td><td>ADD</td></tr>
+        </table>
+        <div class="myorder">
+            <h3>Your Order</h3>
+            <table id="myorder">
+
+            </table>
+            <div class="prices">
+                <h4> Grand Total </h4> = <i id="total" > </i>
+                <h4>Grand Total with Discounts</h4> =<i id="discounts"> </i>
+		<h4>Discounts for inline items</h4> 
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>
